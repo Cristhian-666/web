@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El Pollo Express</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            crossorigin="anonymous"
+            referrerpolity="no-referrer"
+        />
+        <link rel="stylesheet" href="admin/estilo.css" >
+
+    </head>
+
+    <body>
+        <!-- este código establece la estructura básica para un menú de navegación con una imagen de logotipo y enlaces a diversas secciones dentro de la página.  -->
+        <div class="container">  
+            <img src="images/logo1.png" alt="" style="width: 85px;height: 85px;float: left;border-radius: 10px;margin-left: 150px; margin-top: -40px;">
+            <ul>
+                <li><a href='#inicio'>Inicio</a></li>
+                <li><a href='#comentario'>Comentario</a></li>
+                <li><a href='#horarios'>Horarios</a></li>
+                <li><a href='#Ubicacion'>Ubicacion</a></li>
+                <li><a href='#Vision'>Sobre Nosotros</a></li>
+            </ul>
+        </div>
+
+        <!-- este código crea un componente visualmente atractivo que combina imágenes deslizantes con un mensaje promocional centrado, lo que puede ser útil para destacar productos o servicios en un sitio web.  -->
+        <div id="inicio" class="slider-frame">
+            <ul>
+                <li><img src="images/banner1.jpg" alt=""></li>
+                <li><img src="images/banner2.jpg" alt=""></li>
+                <li><img src="images/banner3.jpg" alt=""></li>
+            </ul>
+            <div class="banner-text" style="position:absolute; top:50%; left:30%; transform:translate(-50%, -50%); color:#fff; font-family:Times New Roman;"> 
+                <h1 style=" text-shadow: 2px 3px 10px rgb(15, 15, 13);">El Pollo Express</h1>
+                <p style=" text-shadow: 2px 3px 10px rgb(15, 15, 13);">El pollito que no se olvida</p>
+                <a href="#menu" style="color:#fff; font-family:Times New Roman" class="btn btn-primary">Ver menú</a>
+            </div>
+        </div>
+
+        <!-- Esta parte del codigo representa al boton de la parte inferior derecha, que siempre podra mandarnos al menu de navegacion, afectado por la hoja de estilo  -->
+        <a href="#inicio">
+            <img src="images/logo.jpg" class="btn-inc">
+                <i class="icon-logo"></i>
+            </img>          
+        </a>
+
+        <!-- mensaje de bienvenida empleando  class="mt-4 text-center" que se usa para aplicar un margen superior medio y centrar horizontalmente el texto dentro de un elemento en HTML. -->
+        <section id="id" class=" mt-4 text-center">
+            <!-- mensaje de bienvenida bs5-jumbotron-default  -->
+            
+                <div class="jumbotron bg-dark text-white">
+                    <br/>
+                    <h2>!Bienvenid@ al El Pollo Express!</h2>
+                    <p>Ven a probar lo mas delicioso para tu paladar</p>
+                    <br/>
+                </div>
+            
+        </section>
+
+
+        <!--  este código crea una sección en una página web que muestra la ubicación de un lugar mediante un mapa de Google incrustado. El diseño y el estilo están configurados para que el mapa se vea integrado y se destaque en la página. -->
+        <section id="Ubicacion" class="container" style="margin-top: 10px;background-color: rgb(228, 44, 44);">
+            <h2 style="font-family:Times New Roman">Puede encontrarnos en:</h2>
+            <iframe width="1200" height="400" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d956.3877204529722!2d-68.15970973043112!3d-16.49826371312577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDI5JzUzLjgiUyA2OMKwMDknMzIuNiJX!5e0!3m2!1ses-419!2sbo!4v1717073209746!5m2!1ses-419!2sbo" width="600" height="450" >
+                
+            </iframe>        
+        </section>
+
+
+        <!-- este código crea una sección en una página web que presenta la visión y la misión de un negocio, junto con una imagen ilustrativa. El diseño y los estilos se configuran para que la información sea clara y atractiva para los visitantes del sitio web. -->
+        <section class="container py-4" id="Vision" style="margin-top: 10px;">
+            <!-- el código class="container py-4" id="Vision" style="margin-top: 10px;" asigna clases y estilos específicos a un elemento HTML para controlar su diseño y apariencia en la página web. -->
+
+            <img src="images/prueba.jpg" alt="">
+            <div>
+                <h2 style="font-size: 42px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;">Visión: </h2>
+                <p style="font-size: 18px; font-family: 'Times New Roman', Times, serif;">"Convertirnos en el destino preferido de los amantes de la comida rápida en La Paz, 
+                    ofreciendo una experiencia culinaria excepcional centrada en la frescura, la calidad 
+                    y la innovación, mientras nos esforzamos por ser reconocidos como un negocio 
+                    comprometido con la comunidad”.</p>
+                <h2 style="font-size: 42px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;">Misión: </h2>
+                <p style="font-size: 18px; font-family: 'Times New Roman', Times, serif;">"En PolloExpress, nos dedicamos a servir deliciosos platos de comida rápida, 
+                    especialmente centrados en el pollo, utilizando ingredientes frescos y de la 
+                    más alta calidad. Nos esforzamos por satisfacer los paladares más exigentes, 
+                    ofreciendo un servicio rápido, amigable y personalizado. Además, nos comprometemos 
+                    a apoyar a nuestra comunidad local y a minimizar nuestro impacto en el medio ambiente 
+                    a través de prácticas sostenibles."</p>
+            </div>
+        </section>
+
+
+        <!-- este código HTML establece una sección de comentarios donde los usuarios pueden dejar sus opiniones y enviar mensajes. El diseño y los estilos están configurados para que la sección sea atractiva y fácil de usar. -->
+        <section id="comentario" class="container mt-4" style="background-color: #eae8e2">
+            <h2 style="font-family:Times New Roman">Comentario</h2>
+            <p>Estamos para servirle</p>
+            <form action="?" method="post">
+            <div class="mb-3">
+                <label for="name">Nombre:</label></br>
+                <input type="text" class="form-control" name="nombre" placeholder="Escribe tu nombre..." required>
+
+            </div>
+            <div class="mb-3">
+                <label for="email">Correo electronico:</label></br>
+                <input type="email" class="form-control" name="correo" placeholder="Escribe tu correo electronico..." required>
+                
+            </div>
+            <div class="mb-3">
+                <label for="message">Mensaje:</label></br>
+                <textarea id="message" class="form-control" name="mensaje" rows="6" cols="50"></textarea>
+                </br>
+            </div>
+            <input type="submit" class="btn btn-primary" style="font-family:Times New Roman" value="Enviar mensaje">
+            </form>
+        </section>
+        </br>
+
+
+        <!-- este código HTML establece una sección en una página web que muestra los horarios de atención de un negocio, con un estilo de fondo de imagen y una disposición visualmente atractiva de los horarios. La información se presenta de manera clara y organizada para que los visitantes puedan entender fácilmente los horarios de atención del negocio. -->
+        <section id="horarios" class="container bg-light py-4" style="background:url('images/horario.jpg') no-repeat ; background-position: relative; background-size: cover">
+            <!-- el código class="container bg-light py-4" se aplica a un elemento HTML para darle un diseño que incluye un contenedor centrado horizontalmente, un fondo claro y un relleno vertical mediano para mejorar su apariencia y legibilidad. -->
+            <!-- en la parte de 'style' aplicamos el tipo de fondo, tipo de letra, la posicion, el centreado, el margen -->
+
+            <div class="text-center" style="font-family:Times New Roman; position:relative; top:50%; left:30%; transform:translate(-50%, 3%)">
+                <h3 class="mb-4">Horario de atencion </h3>
+                <div> <b>
+                    <p><strong>Lunes a viernes </strong></p>
+                    <p><strong>11:00 a.m. - 10:00 p.m.</strong></p>
+            </div>
+            <div style="font-family:Times New Roman">
+                    <p><strong>Sabado </strong></p>
+                    <p><strong>12:00 a.m. - 5:00 p.m.</strong></p>
+            </div>
+            <div style="font-family:Times New Roman"
+                    <p><strong>Domingo </strong></p>
+                    <p><strong>7:00 a.m. - 2:00 p.m.</strong></p> </b>
+            </div>
+            </br>
+        </section>
+
+
+        <!-- este código HTML crea un pie de página con un fondo oscuro, texto claro alineado al centro y un mensaje que indica los derechos de autor del contenido de la página web para el año 2024. -->
+        <footer class="bg-dark text-light text-center py-3">
+            <p> &copy; 2024 Negocio El Pollo Express. Derechos Reservados</p>
+        </footer>
+    </body>
+</html>

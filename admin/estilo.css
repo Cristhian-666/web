@@ -1,0 +1,132 @@
+
+
+.container{
+    background-color: rgb(241, 180, 127);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 45px;
+}
+
+
+.container ul {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    li {
+      list-style: none;
+      a {
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+        margin: 20px 0;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #262626;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        transition: .5s;
+        z-index: 1;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-top: 2px solid #262626;
+          border-bottom: 2px solid #c43838;
+          transform: scaleY(2);
+          opacity: 0;
+          transition: .3s;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: 2px;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #262626;
+          transform: scale(0);
+          opacity: 0;
+          transition: .3s;
+          z-index: -1;
+        }
+        &:hover {
+          color: #ffffff;
+          &:before {
+            transform: scaleY(1);
+            opacity: 1;
+          }
+          &:after {
+            transform: scaleY(1);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+
+  .slider-frame{
+    width: 1280px;
+    height: 600px;
+    margin: 0px auto 0;
+    overflow: hidden;
+    padding: 10px;
+}
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+.slider-frame img{
+    width: 1280px;
+    height: 600px;
+}
+@keyframes slide {
+    0% {margin-left: 0%;}
+    30% {margin-left: 0%;}
+
+    35% {margin-left: -135%;}
+    65% {margin-left: -135%;}
+
+    70% {margin-left: -265%;}
+    100% {margin-left: -265%;}
+}
+
+.btn-inc{
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    bottom: 50px;
+    right: 50px;
+    background: #f78913;
+    border-radius: 70px;
+    text-align: center;
+    font-size: 50px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    opacity: 0.7;
+}
+.btn-inc:hover{
+    opacity: 1;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.50);
+}
+
+
+.container img {
+    max-width: 320px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 15px;
+}
